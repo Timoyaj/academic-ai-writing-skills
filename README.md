@@ -14,9 +14,13 @@ academic-ai-writing-skills/
 │   ├── authentic-academic-writer/
 │   │   ├── SKILL.md
 │   │   └── references/
+│   │       ├── academic_referee_audit.md
+│   │       ├── anti_plagiarism_synthesis.md
 │   │       ├── banned_lexicon.md
 │   │       ├── burstiness_syntax.md
-│   │       └── anti_plagiarism_synthesis.md
+│   │       ├── methodology_precision_guide.md
+│   │       ├── pg_thesis_guide.md
+│   │       └── tool_integration_pipeline.md
 │   │
 │   └── academic-doc-extractor-docx/
 │       ├── SKILL.md
@@ -34,9 +38,13 @@ academic-ai-writing-skills/
 ## 1. Skill: `authentic-academic-writer`
 
 ### What It Does
-Operationalizes empirical forensic stylometry and detection research (Weber-Wulff 2023, Liang 2023, Cabanac 2021) to eliminate machine-generation fingerprints and keep Turnitin/iThenticate plagiarism similarity strictly below 4%.
+Operationalizes empirical forensic stylometry, detection research (Weber-Wulff 2023, Liang 2023, Cabanac 2021), and postgraduate academic standards (Science, Engineering & Technology thesis guidelines) to eliminate machine-generation fingerprints, enforce mathematical/empirical rigor, and keep Turnitin/iThenticate plagiarism similarity strictly below 4%.
 
 ### Core Features
+* **Postgraduate Thesis & Dissertation Engine:** Full chapter-by-chapter drafting and revision protocols (Chapters 1.0 through 6.0: Introduction, Literature Review, Methodology, Results, Discussion, Conclusion & Recommendations) adhering to institutional guidelines (e.g., JOSTUM PG Thesis Guideline 4th Edition - Section B1 ASET).
+* **Autonomous Academic Tool Integration:** Orchestrates `academic-mcp` (paper search & full PDF intake), `fasttrack-literature` (topic debate mapping & Crossref reference verification), `consensus` (evidence consensus search), and real-time literature discovery.
+* **Top-Tier Peer Referee Pre-Flight Audit:** Simulates adversarial review (*Nature, Econometrica, JASA, NeurIPS*) across theoretical tightness, baseline fairness, data leakage guards, and claim calibration.
+* **Methodology Precision Framework:** Enforces strict five-layer mathematical/statistical specification (parameters, identifying assumptions, Neyman-orthogonal score estimators, asymptotic distributions, and rate transparency) eliminating vague hand-waving.
 * **Zero Inline Bolding (`**word**`):** Eliminates mid-sentence bolding habits that give away LLM output. Bolding is restricted strictly to section headers.
 * **Zero Em Dashes (`—` or `--`):** Eliminates the excessive em dashes that LLMs generate at 300%–500% the human rate.
 * **Zero Bullet-Point Laundry Lists:** Replaces fragmented bullet-point prose with flowing, continuous academic paragraphs.

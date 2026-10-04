@@ -1,81 +1,71 @@
 # Burstiness and Syntactic Modulation in Scholarly Writing
 
-Burstiness refers to variance in sentence length, rhythmic velocity, and syntactic complexity throughout a text. Large Language Models naturally produce low burstiness: their sentences maintain a steady, metronomic cadence (typically averaging 18–24 words per sentence, with low standard deviation).
+Burstiness refers to statistical variance in sentence length, rhythmic velocity, and syntactic complexity throughout a manuscript. Large Language Models exhibit low burstiness: their sentences maintain a flat, metronomic cadence (averaging 18–24 words per sentence, with standard deviations below 6 words).
 
-Authentic human scholars write with **high burstiness**: they juxtapose terse, hard-hitting assertions with expansive, multi-clause analytical sentences.
+Authentic human scholars write with **high burstiness**: they juxtapose terse, decisive assertions with expansive, multi-clause analytical periodic sentences.
 
 ---
 
 ## 1. The Staccato-Legato Cadence Blueprint
 
-To defeat statistical perplexity-burstiness detection algorithms naturally, structure paragraphs using the **Staccato-Legato Rule**:
+To naturally defeat statistical perplexity-burstiness detection benchmarks, structure paragraphs using the **Staccato-Legato Blueprint**:
 
 ```
-[Legato (40+ words)] ──> [Staccato (5-8 words)] ──> [Analytical (15-20 words)] ──> [Legato (35+ words)]
+[Staccato (4-8 words)] ──> [Analytical (15-22 words)] ──> [Legato Periodic (35-50+ words)] ──> [Punchy Anchor (5-9 words)]
 ```
 
 ### Sentence Types:
 
-#### Type A: The Staccato Assertion (4–9 words)
-*   **Purpose:** Anchors a claim, delivers a critical verdict, states a stark empirical fact, or introduces an abrupt turn in the argument.
-*   *Examples:*
-    *   "The data refute this entirely."
-    *   "This distinction is vital."
-    *   "No historical precedent exists."
-    *   "Yields dropped precipitously."
-    *   "The hypothesis fails on two counts."
+#### Type A: The Staccato Assertion (4–8 words)
+* **Function:** Delivers a critical empirical verdict, anchors a core hypothesis, or introduces an abrupt turn in argument.
+* *Examples:*
+  * "The data refute this entirely."
+  * "This distinction is vital."
+  * "No historical precedent exists."
+  * "Yields dropped precipitously."
+  * "The identification strategy collapses."
 
-#### Type B: The Analytical Exposition (12–22 words)
-*   **Purpose:** Connects causal mechanisms, introduces empirical measurements, or contextualizes literature.
-*   *Examples:*
-    *   "A single-factor ANOVA confirmed statistically significant variance between experimental arms ($F = 14.2$, $p < 0.001$)."
-    *   "Early institutional models assumed economic self-interest was the sole determinant of compliance."
+#### Type B: The Analytical Exposition (14–24 words)
+* **Function:** Explains causal mechanisms, presents formal test statistics, or contextualizes empirical literature.
+* *Examples:*
+  * "A single-factor ANOVA confirmed statistically significant variance between treatment arms ($F = 14.2$, $p < 0.001$)."
+  * "Semiparametric estimators isolate orthogonal score components, insulating the target parameter from first-stage convergence rates."
 
-#### Type C: The Legato Periodic Sentence (32–55+ words)
-*   **Purpose:** Synthesizes multiple interacting dependencies, qualifies complex findings, or untangles intricate historical/theoretical debates.
-*   *Examples:*
-    *   "Although early observational cohorts reported a modest protective effect associated with dietary polyphenols, subsequent double-blind randomized trials demonstrated that these associations were confounded by baseline socioeconomic indicators and access to preventive healthcare, effectively nullifying the earlier conclusions."
-    *   "By calibrating the laser interferometer against cryogenic standards prior to each measurement cycle, the experimental team isolated thermal expansion artifacts, thereby ensuring that detected phase shifts reflected genuine relativistic perturbations rather than ambient vibrational noise."
-
----
-
-## 2. Before & After: Transforming Flat AI Prose
-
-### ❌ AI-Generated Paragraph (Low Burstiness, Low PPL, Flagged at 98% AI):
-> "The implementation of artificial intelligence in healthcare has shown significant promise in improving diagnostic accuracy. Furthermore, machine learning models can analyze medical imaging data much faster than human clinicians. In addition, these computational systems can identify subtle patterns in radiological scans that might be missed by the human eye. Ultimately, the integration of AI tools stands as a testament to technological progress and plays a crucial role in modern clinical workflows."
-
-*Metrics:*
-* Average sentence length: 22.2 words.
-* Sentence lengths: [15, 17, 23, 27] words.
-* Standard deviation: **4.6 words** (Extremely flat, metronomic).
-* AI tells present: *Furthermore, In addition, Ultimately, stands as a testament to, plays a crucial role*.
+#### Type C: The Legato Periodic Sentence (35–55+ words)
+* **Function:** Synthesizes interacting theoretical dependencies, qualifies complex findings, or reconciles conflicting literature.
+* *Examples:*
+  * "Although early observational cohorts reported a modest protective effect associated with dietary polyphenols, subsequent double-blind randomized trials demonstrated that these associations were confounded by baseline socioeconomic indicators and access to preventive healthcare, effectively nullifying the earlier conclusions."
+  * "By cross-fitting nuisance functions across auxiliary sample splits prior to calculating the Neyman orthogonal score, the estimator eliminates first-order bias induced by high-dimensional regularization, thereby ensuring that empirical confidence intervals achieve nominal $95\%$ coverage even under moderate sparsity."
 
 ---
 
-### ✅ Human-Authentic Transformation (High Burstiness, Zero Tells, 0% AI Score):
-> "Machine learning algorithms frequently outperform human radiologists in specific, narrowly bounded diagnostic tasks. The speed advantage is undeniable. When processing multi-slice computed tomography scans, convolutional neural networks detect sub-millimeter pulmonary nodules in fractions of a second, whereas an experienced clinician may require ten minutes per patient volume. Yet speed does not ensure diagnostic safety. Without rigorous external validation across heterogeneous clinical environments—where slice thickness, scanner calibration, and patient motion introduce substantial variance—these algorithmic efficiencies remain clinically precarious."
+## 2. Quantitative Metric Targets
 
-*Metrics:*
-* Sentence lengths: [14, 5, 29, 7, 36] words.
-* Standard deviation: **12.4 words** (High burstiness, authentic human cadence).
-* AI tells: **0**.
-* Epistemic stance: Clear, critical, scientifically grounded.
+When auditing or drafting text, ensure paragraph metrics satisfy:
+
+* **Sentence Length Standard Deviation:** $\sigma > 10.0\text{ words}$.
+* **Word Count Span:** $\text{Max}(\text{words}) - \text{Min}(\text{words}) \ge 25\text{ words}$.
+* **Mid-Band Spread:** Fewer than $40\%$ of sentences should fall in the generic 14–20 word band.
 
 ---
 
-## 3. Syntactic Diversity Patterns
+## 3. Punctuation Normalization Rules
 
-To maintain authentic syntactical variety across long manuscripts:
+* **Zero Em Dashes (`—` and `--`):** Em dashes are an immediate AI signature. Replace parentheticals with commas, standard parentheses, or separate sentences.
+* **Standard Straight Quotes:** Use straight ASCII single (`'`) and double (`"`) quotes.
+* **Controlled Semicolons:** Semicolons should be used strictly to join closely linked independent clauses or delimit complex lists containing internal commas.
+* **Zero Mid-Sentence Announcement Colons:** State claims directly without preceding them with announcement formulas (`The finding:`, `The reason is:`).
 
-### 1. Inverted Conditional Clauses
-*   *Instead of:* "If the temperature exceeds 80 °C, the enzyme denatures."
-*   *Use:* "Should reaction temperatures exceed 80 °C, enzyme denaturation occurs irreversibly."
+---
 
-### 2. Parenthetical Asides & Embedded Em-Dashes (Used Sparingly)
-*   *Example:* "The principal contaminant—an unreacted precursor from the initial synthesis step—persisted despite triple distillation."
+## 4. Syntactic Diversity Patterns
 
-### 3. Participial Phrase Openers
-*   *Example:* "Having isolated the catalytic subunit through size-exclusion chromatography, the authors proceeded to measure Michaelis-Menten kinetics under varying pH conditions."
+### 1. Inverted Conditionals
+* *Instead of:* "If the sample size exceeds 500, the estimator converges."
+* *Use:* "Should sample sizes exceed 500, the estimator converges rapidly to nominal coverage."
 
-### 4. Semicolon-Coupled Independent Clauses
-*   *Example:* "The survey captured self-reported adherence; it did not, however, track actual biochemical clearance."
+### 2. Participial Phrase Openers
+* *Example:* "Having isolated the orthogonal score component through sample splitting, the authors evaluated finite-sample coverage across varying degrees of covariate overlap."
+
+### 3. Semicolon-Coupled Contrasts
+* *Example:* "The survey captured self-reported adherence; it did not, however, record actual biochemical clearance."
